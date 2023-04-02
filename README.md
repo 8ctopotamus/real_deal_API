@@ -2,7 +2,11 @@
 
 Learning [Elixir](https://elixir-lang.org/) and [Pheonix Framework](https://www.phoenixframework.org/) with the [Backend Stuff - Phoenix Framework Tutorial](https://www.youtube.com/watch?v=s3WNCjN4Pes) on Youtube.
 
-## Commands
+## Develop locally
+* Make sure to have docker container created and running (see commands below)
+* See below for running Pheonix server
+
+## Commands learned along the way
 
 ```sh
 # pull docker postgress image
@@ -31,6 +35,9 @@ psql -U root bs_db
 
 # run the app
 mix phx.server
+
+#generate a JSON controller called Accounts, module Account, db table account, that has email and hash_password columns of type string
+mix phx.gen.json Accounts Account account email:string hash_password:string
 
 ```
 
